@@ -8,13 +8,10 @@ docker run --name wordpressdb -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=
 docker ps -a
 read -p "Continuing in 60 Seconds...." -t 60
 
-docker inspect wordpressdb
-read -p "Continuing in 10 Seconds...." -t 10
-
-docker run -e WORDPRESS_DB_PASSWORD=password -d --name wordpress --link wordpressdb:mysql -p 127.0.0.1:8080:80 -v "$PWD/site1":/var/www/html wordpress
+docker run -e WORDPRESS_DB_PASSWORD=password -d --name wordpress --link wordpressdb:mysql -p 127.0.0.1:8888:80 -v "$PWD/site1":/var/www/html wordpress
 docker ps -a
 read -p "Continuing in 10 Seconds...." -t 10
 
 docker ps -a
-echo "open http://127.0.0.1:8080"
+echo "open http://127.0.0.1:8888"
 read -p "Completed in 10 Seconds...." -t 10
