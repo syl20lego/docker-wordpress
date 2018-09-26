@@ -26,7 +26,7 @@ Start a Wordpress instance on http://127.0.0.1:8888
 
 * `./install.sh` will install both MySql and Wordpress.
 * `./stop.sh` stop both Wordpress and MySql, the containers remains in their current state (saved).
-* `./start.bshat` start both Wordpress and MySql with their last state.
+* `./start.sh` start both Wordpress and MySql with their last state.
 * `./remove.sh` remove everything, there is no comming back.
 
 Start a Wordpress instance on http://127.0.0.1:8888
