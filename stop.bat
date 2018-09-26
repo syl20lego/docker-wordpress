@@ -1,4 +1,3 @@
-#!/bin/bash      
 
 docker ps -a
 docker stop wordpress

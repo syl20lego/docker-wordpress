@@ -1,6 +1,4 @@
-#!/bin/bash      
 
-et user docker /delete
+net user docker /delete
 
-net user docker $1 /add
-
+net user docker %1 /add
