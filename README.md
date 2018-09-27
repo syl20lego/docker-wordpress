@@ -22,11 +22,11 @@ You might need to shared the drive. You can use `user.bat password` to create a 
 
 Start a Wordpress instance on http://127.0.0.1:8888
 
-# MacOS (not tested on Linux)
+# MacOS and Linux
 
 * `./install.sh` will install both MySql and Wordpress.
 * `./stop.sh` stop both Wordpress and MySql, the containers remains in their current state (saved).
 * `./start.sh` start both Wordpress and MySql with their last state.
-* `./remove.sh` remove everything, there is no comming back.
+* `./remove.sh` remove everything, there is no comming back. On Linux you might have to use sudo `sudo ./remove.sh` as the db1 and site1 directory are under docker and www-date ownership.
 
 Start a Wordpress instance on http://127.0.0.1:8888
