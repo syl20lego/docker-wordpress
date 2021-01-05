@@ -9,6 +9,20 @@ This is inpired by [How to Use the Official Docker WordPress Image](https://www.
 
 Requires docker to be running
 
+# Docker Compose
+
+You can now just use the docker-compose.yml file and run using
+
+```
+docker-compose -f "docker-compose.yml" up -d --build
+```
+
+```
+docker-compose -f "docker-compose.yml" down
+```
+
+p.s. you can still use the stop or remove script if you want to clean up you folder
+
 # Windows
 
 You might need to shared the drive. You can use `user.bat password` to create a windows user to be used with docker shared drive.
