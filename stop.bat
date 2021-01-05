@@ -1,7 +1,7 @@
 
 docker ps -a
 docker stop wordpress
-docker stop wordpressd
+docker stop wordpressdb
 docker ps -a
 
 echo "ready"
